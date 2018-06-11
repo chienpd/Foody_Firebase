@@ -3,4 +3,10 @@
     <string name="version">Phiên Bản</string>
     <string name="progress"> Đang tải...</string>
     <string name="tenCongty">chienphamk58.hust.com</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="or">hoặc</string>
+    <string name="facebook_app_id">297517107395013</string>
+    <string name="fb_login_protocol_scheme">fb297517107395013</string>
 </resources>

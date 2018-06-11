@@ -1,7 +1,7 @@
 package com.hust.pdc.foody.View;
 
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
+import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -19,6 +19,15 @@ public class SlashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.layout_flashscreen);
 
         txtversion = findViewById(R.id.txtversion);
-        txtversion.setText(getString(R.string.version) + " " + BuildConfig.VERSION_NAME);
+        txtversion.setText(String.format("%s %s", getString(R.string.version), BuildConfig.VERSION_NAME));
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent iDangNhap = new Intent(SlashScreenActivity.this, DangNhapActivity.class);
+                startActivity(iDangNhap);
+            }
+        }, 2000);
     }
 }
